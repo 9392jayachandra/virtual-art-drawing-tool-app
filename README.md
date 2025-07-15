@@ -1,5 +1,10 @@
 # virtual-art-drawing-tool-app
 A virtual canvas drawing tool built with HTML, CSS, and JavaScript.
+I have used 3 of these web APIs:
+        Canvas API – for drawing.
+        Background Tasks API – for saving the sketch automatically every few seconds.
+        Network Information API – to show network status.
+        
 This tool can be helpful in many ways:
 
 Freehand Drawing:
