@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Art Drawing Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>🎨 Virtual Art Drawing Tool</h1>
+  <p id="status">Checking network status...</p>
+
+  <div class="main-container">
+    <div class="left-panel">
+      <!-- Colors -->
+      <div id="colors">
+        <label>Select Color:</label>
+        <input type="color" id="colorPicker" value="#ffffff" />
+        <div id="colorButtons">
+          <button class="color-btn" style="background: red" onclick="setColor('red')"></button>
+          <button class="color-btn" style="background: green" onclick="setColor('green')"></button>
+          <button class="color-btn" style="background: blue" onclick="setColor('blue')"></button>
+          <button class="color-btn" style="background: yellow" onclick="setColor('yellow')"></button>
+          <button class="color-btn" style="background: orange" onclick="setColor('orange')"></button>
+          <button class="color-btn" style="background: purple" onclick="setColor('purple')"></button>
+          <button class="color-btn" style="background: cyan" onclick="setColor('cyan')"></button>
+          <button class="color-btn" style="background: white" onclick="setColor('white')"></button>
+          <button class="color-btn" style="background: black" onclick="setColor('black')"></button>
+        </div>
+      </div>
+
+      <!-- Text Tool -->
+      <div id="text-tool">
+        <input type="text" id="textInput" placeholder="Type text..." />
+        <button onclick="enableText()">📝 Add Text</button>
+      </div>
+
+      <!-- Canvas -->
+      <canvas id="canvas" width="800" height="500"></canvas>
+      <br />
+      <button class="btn" onclick="clearCanvas()">🧹 Clear</button>
+      <button class="btn" onclick="downloadImage()">💾 Download</button>
+    </div>
+
+    <!-- Right Panel: Saved Drawing Downloads -->
+    <div class="right-panel">
+      <h3>📂 My Saved Drawings</h3>
+      <ul id="savedLinks" class="link-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

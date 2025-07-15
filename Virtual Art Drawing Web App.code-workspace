@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Virtual Art Drawing Tool"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Virtual Art Drawing Tool Web App"
+	}
+}
